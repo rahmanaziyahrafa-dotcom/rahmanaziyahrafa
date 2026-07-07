@@ -1,0 +1,1065 @@
+```html
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nusantara Firma - Solusi Hukum Tepercaya & Profesional</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            950: '#020c1b',
+                            900: '#0a192f',
+                            800: '#0d223f',
+                            700: '#112240',
+                            600: '#1d3557',
+                        },
+                        gold: {
+                            100: '#fbf7ee',
+                            200: '#f5eacf',
+                            500: '#C5A059',
+                            600: '#B08C46',
+                            700: '#917133',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #020c1b;
+        }
+        .serif-title {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020c1b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C5A059;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #B08C46;
+        }
+    </style>
+</head>
+<body class="text-slate-200 overflow-x-hidden">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-navy-950/90 backdrop-blur-md border-b border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-gold-500 to-gold-700 rounded flex items-center justify-center text-navy-950 shadow-md shadow-gold-500/20">
+                        <i class="fa-solid fa-scale-balanced text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold tracking-wider text-gold-500 serif-title">NUSANTARA</span>
+                        <span class="block text-[10px] uppercase tracking-widest text-slate-400 font-bold -mt-1">Firma Hukum</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-8 font-medium">
+                    <a href="#home" class="hover:text-gold-500 transition-colors duration-300">Beranda</a>
+                    <a href="#about" class="hover:text-gold-500 transition-colors duration-300">Tentang Kami</a>
+                    <a href="#praktik" class="hover:text-gold-500 transition-colors duration-300">Area Praktik</a>
+                    <a href="#tim" class="hover:text-gold-500 transition-colors duration-300">Tim Advokat</a>
+                    <a href="#konsultasi-portal" class="bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 px-5 y-2 py-2.5 rounded hover:from-gold-600 hover:to-gold-700 font-bold transition-all duration-300 shadow-lg shadow-gold-500/10 flex items-center gap-2">
+                        <i class="fa-solid fa-calendar-alt"></i> Konsultasi Online
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-gold-500 focus:outline-none transition-colors">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-900 border-b border-gold-500/10 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block py-2 px-3 hover:bg-navy-800 rounded text-slate-300 hover:text-gold-500 transition-all">Beranda</a>
+            <a href="#about" class="block py-2 px-3 hover:bg-navy-800 rounded text-slate-300 hover:text-gold-500 transition-all">Tentang Kami</a>
+            <a href="#praktik" class="block py-2 px-3 hover:bg-navy-800 rounded text-slate-300 hover:text-gold-500 transition-all">Area Praktik</a>
+            <a href="#tim" class="block py-2 px-3 hover:bg-navy-800 rounded text-slate-300 hover:text-gold-500 transition-all">Tim Advokat</a>
+            <a href="#konsultasi-portal" class="block text-center bg-gold-500 text-navy-950 py-3 rounded font-bold hover:bg-gold-600 transition-all">
+                <i class="fa-solid fa-calendar-alt mr-2"></i>Konsultasi Online
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="pt-32 pb-20 md:pt-48 md:pb-32 relative overflow-hidden flex items-center min-height-screen">
+        <!-- Geometric decorative shapes -->
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gold-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-500/5 rounded-full blur-[80px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-500 text-sm font-semibold tracking-wide">
+                        <i class="fa-solid fa-shield-halved"></i> Advokat & Konsultan Hukum Profesional
+                    </div>
+                    <h1 class="serif-title text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                        Menegakkan Keadilan,<br class="hidden sm:inline">
+                        <span class="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-gold-500 to-gold-200">Melindungi Kepentingan</span> Anda.
+                    </h1>
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0">
+                        Nusantara Firma hadir sebagai mitra hukum tepercaya untuk menyelesaikan permasalahan hukum bagi <strong>Klien Individu</strong> maupun <strong>Klien Bisnis</strong> dengan integritas, transparansi, dan efisiensi berbasis teknologi.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                        <a href="#konsultasi-portal" class="bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 font-bold px-8 py-4 rounded-lg shadow-lg shadow-gold-500/15 hover:shadow-gold-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-clipboard-question text-lg"></i> Mulai Konsultasi Sekarang
+                        </a>
+                        <a href="#praktik" class="border border-slate-600 hover:border-gold-500 hover:text-gold-500 font-semibold px-8 py-4 rounded-lg transition-all flex items-center justify-center gap-2">
+                            Pelajari Layanan Kami <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Stats Grid -->
+                    <div class="grid grid-cols-3 gap-6 pt-10 border-t border-slate-800">
+                        <div>
+                            <div class="serif-title text-3xl font-bold text-gold-500">98%</div>
+                            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Tingkat Kepuasan</div>
+                        </div>
+                        <div>
+                            <div class="serif-title text-3xl font-bold text-gold-500">500+</div>
+                            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Perkara Selesai</div>
+                        </div>
+                        <div>
+                            <div class="serif-title text-3xl font-bold text-gold-500">15+</div>
+                            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Advokat Senior</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content / Interactive Intake Teaser Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-navy-800/80 border border-gold-500/20 rounded-2xl p-6 sm:p-8 shadow-2xl backdrop-blur-md relative">
+                        <div class="absolute -top-3 -right-3 bg-red-500 text-white font-bold text-xs px-3 py-1 rounded-full animate-bounce">
+                            Online 24/7
+                        </div>
+                        <h3 class="serif-title text-2xl font-bold text-white mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-circle-question text-gold-500"></i> Ada Masalah Hukum?
+                        </h3>
+                        <p class="text-slate-400 text-sm mb-6">
+                            Gunakan asisten interaktif cepat kami untuk mencocokkan permasalahan Anda dengan tim ahli Nusantara Firma.
+                        </p>
+                        
+                        <!-- Mini Intake Form (Triggers major portal scroll) -->
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider font-semibold text-slate-400 mb-2">Siapa Anda?</label>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <button onclick="selectQuickType('Individu')" class="py-3 px-4 rounded-lg border border-slate-700 bg-navy-900 text-center hover:border-gold-500 transition-all font-semibold block text-sm active-type-btn" id="btn-quick-ind">
+                                        <i class="fa-solid fa-user mr-2 text-gold-500"></i>Perseorangan
+                                    </button>
+                                    <button onclick="selectQuickType('Bisnis')" class="py-3 px-4 rounded-lg border border-slate-700 bg-navy-900 text-center hover:border-gold-500 transition-all font-semibold block text-sm" id="btn-quick-bis">
+                                        <i class="fa-solid fa-briefcase mr-2 text-gold-500"></i>Perusahaan / Bisnis
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider font-semibold text-slate-400 mb-2">Area Hukum Terkait</label>
+                                <select id="quick-category" class="w-full bg-navy-900 border border-slate-700 rounded-lg p-3 text-slate-300 focus:outline-none focus:border-gold-500 text-sm">
+                                    <option value="">-- Pilih Kategori Hukum --</option>
+                                    <option value="perdata">Hukum Perdata & Keluarga</option>
+                                    <option value="bisnis">Kontrak & Legalitas Bisnis</option>
+                                    <option value="pidana">Hukum Pidana Umum/Khusus</option>
+                                    <option value="sengketa">Sengketa Tanah & Properti</option>
+                                </select>
+                            </div>
+
+                            <button onclick="goToConsultation()" class="w-full bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold py-3.5 rounded-lg transition-all flex items-center justify-center gap-2 text-sm shadow-md shadow-gold-500/10">
+                                Ajukan Analisis Kasus Baru <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 bg-navy-900/50 border-t border-b border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left: Aesthetic SVG & Credentials -->
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-gold-500/10 to-transparent rounded-2xl filter blur-2xl"></div>
+                    <div class="relative bg-navy-950 p-8 rounded-2xl border border-slate-800 shadow-xl space-y-6">
+                        <!-- Custom SVG illustration of Scales of Justice -->
+                        <div class="w-full flex justify-center py-6">
+                            <svg class="w-48 h-48 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 3v18M5 8.5L12 6l7 2.5M5 8.5v6a3.5 3.5 0 007 0v-6M19 8.5v6a3.5 3.5 0 01-7 0v-6M9 18.5h6" />
+                                <circle cx="5" cy="14.5" r="1.5" fill="currentColor"/>
+                                <circle cx="19" cy="14.5" r="1.5" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="serif-title text-xl font-bold text-white text-center">Komitmen Integritas Nusantara</h4>
+                            <p class="text-sm text-slate-400 text-center leading-relaxed">
+                                "Kami percaya bahwa keadilan adalah hak setiap insan dan kepastian hukum adalah pilar utama kemajuan bisnis di Indonesia."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: About description -->
+                <div class="space-y-6">
+                    <div class="text-gold-500 font-semibold tracking-wider uppercase text-sm">Tentang Nusantara Firma</div>
+                    <h2 class="serif-title text-3xl sm:text-4xl font-bold text-white leading-tight">
+                        Solusi Hukum Komprehensif dengan Pendekatan Humanis & Profesional
+                    </h2>
+                    <p class="text-slate-400">
+                        Nusantara Firma didirikan oleh para pakar hukum berpengalaman dari berbagai latar belakang spesialisasi. Kami berkomitmen untuk menjembatani kesenjangan antara masyarakat dengan kepastian hukum yang adil dan berkeadilan.
+                    </p>
+                    <div class="space-y-4 pt-2">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-500 flex-shrink-0">
+                                <i class="fa-solid fa-gavel text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Kepastian Strategi Hukum</h4>
+                                <p class="text-slate-400 text-sm">Setiap penyelesaian perkara didukung oleh analisis yuridis yang mendalam dan mitigasi risiko yang matang.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-500 flex-shrink-0">
+                                <i class="fa-solid fa-headset text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Akses Komunikasi Real-time</h4>
+                                <p class="text-slate-400 text-sm">Klien dapat memantau progres perkara, mengunggah berkas, dan berkonsultasi langsung melalui portal kami.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- AREA PRAKTIK (SERVICES) -->
+    <section id="praktik" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="text-gold-500 font-semibold tracking-wider uppercase text-sm">Area Layanan Yuridis</div>
+                <h2 class="serif-title text-3xl sm:text-4xl font-bold text-white">Spesialisasi Praktik Hukum Kami</h2>
+                <p class="text-slate-400">Kami membagi spesialisasi layanan kami secara terarah guna melayani kebutuhan spesifik dari klien perseorangan (individu) maupun sektor korporasi (bisnis).</p>
+                
+                <!-- Category Tabs Switcher -->
+                <div class="inline-flex p-1.5 rounded-lg bg-navy-900 border border-slate-800 mt-6">
+                    <button onclick="switchPracticeTab('semua')" id="tab-semua" class="px-5 py-2 rounded text-sm font-semibold transition-all duration-300 bg-gold-500 text-navy-950 shadow-md">Semua Layanan</button>
+                    <button onclick="switchPracticeTab('individu')" id="tab-individu" class="px-5 py-2 rounded text-sm font-semibold transition-all duration-300 text-slate-400 hover:text-white">Klien Individu</button>
+                    <button onclick="switchPracticeTab('bisnis')" id="tab-bisnis" class="px-5 py-2 rounded text-sm font-semibold transition-all duration-300 text-slate-400 hover:text-white">Klien Bisnis</button>
+                </div>
+            </div>
+
+            <!-- Practice Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="practice-grid">
+                <!-- Card 1: Individu -->
+                <div class="practice-card bg-navy-800/50 border border-slate-800 rounded-xl p-8 hover:border-gold-500/50 transition-all duration-300 hover:-translate-y-1 shadow-lg" data-category="individu">
+                    <div class="text-gold-500 text-4xl mb-6"><i class="fa-solid fa-users-viewfinder"></i></div>
+                    <h3 class="serif-title text-xl font-bold text-white mb-3">Hukum Keluarga & Waris</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Penanganan profesional terkait isu perceraian, pembagian harta gono-gini, hak asuh anak, sengketa hak waris, serta pembuatan wasiat resmi sesuai hukum perdata.</p>
+                    <a href="#konsultasi-portal" onclick="selectPracticeInForm('Hukum Keluarga')" class="text-gold-500 hover:text-gold-400 text-sm font-bold flex items-center gap-2">Mulai Konsultasi <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                </div>
+
+                <!-- Card 2: Individu / Bisnis -->
+                <div class="practice-card bg-navy-800/50 border border-slate-800 rounded-xl p-8 hover:border-gold-500/50 transition-all duration-300 hover:-translate-y-1 shadow-lg" data-category="individu">
+                    <div class="text-gold-500 text-4xl mb-6"><i class="fa-solid fa-house-chimney"></i></div>
+                    <h3 class="serif-title text-xl font-bold text-white mb-3">Sengketa Tanah & Properti</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Pendampingan hukum dalam sengketa kepemilikan lahan, penelusuran status sertifikat tanah, sengketa sewa-menyewa, hingga klaim penguasaan aset ilegal.</p>
+                    <a href="#konsultasi-portal" onclick="selectPracticeInForm('Sengketa Tanah')" class="text-gold-500 hover:text-gold-400 text-sm font-bold flex items-center gap-2">Mulai Konsultasi <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                </div>
+
+                <!-- Card 3: Bisnis -->
+                <div class="practice-card bg-navy-800/50 border border-slate-800 rounded-xl p-8 hover:border-gold-500/50 transition-all duration-300 hover:-translate-y-1 shadow-lg" data-category="bisnis">
+                    <div class="text-gold-500 text-4xl mb-6"><i class="fa-solid fa-handshake"></i></div>
+                    <h3 class="serif-title text-xl font-bold text-white mb-3">Hukum Perusahaan & Kontrak</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Pembuatan dan peninjauan (*review*) draf kontrak komersial, pendirian badan usaha (PT, CV, Firma), restrukturisasi korporasi, hingga penanganan kasus kepailitan bisnis.</p>
+                    <a href="#konsultasi-portal" onclick="selectPracticeInForm('Hukum Perusahaan')" class="text-gold-500 hover:text-gold-400 text-sm font-bold flex items-center gap-2">Mulai Konsultasi <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                </div>
+
+                <!-- Card 4: Bisnis -->
+                <div class="practice-card bg-navy-800/50 border border-slate-800 rounded-xl p-8 hover:border-gold-500/50 transition-all duration-300 hover:-translate-y-1 shadow-lg" data-category="bisnis">
+                    <div class="text-gold-500 text-4xl mb-6"><i class="fa-solid fa-shield-cat"></i></div>
+                    <h3 class="serif-title text-xl font-bold text-white mb-3">Hak Kekayaan Intelektual (HAKI)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Pendaftaran dan perlindungan hukum terhadap Merek Dagang, Paten Penemuan, Hak Cipta Karya Seni/Sastra, Desain Industri, serta penanganan kasus plagiarisme.</p>
+                    <a href="#konsultasi-portal" onclick="selectPracticeInForm('HAKI')" class="text-gold-500 hover:text-gold-400 text-sm font-bold flex items-center gap-2">Mulai Konsultasi <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                </div>
+
+                <!-- Card 5: Individu -->
+                <div class="practice-card bg-navy-800/50 border border-slate-800 rounded-xl p-8 hover:border-gold-500/50 transition-all duration-300 hover:-translate-y-1 shadow-lg" data-category="individu">
+                    <div class="text-gold-500 text-4xl mb-6"><i class="fa-solid fa-gavel"></i></div>
+                    <h3 class="serif-title text-xl font-bold text-white mb-3">Hukum Pidana & Litigasi</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Pendampingan komprehensif bagi individu yang sedang menghadapi perkara pidana umum atau khusus pada setiap tahapan (Kepolisian, Kejaksaan, hingga Pengadilan).</p>
+                    <a href="#konsultasi-portal" onclick="selectPracticeInForm('Hukum Pidana')" class="text-gold-500 hover:text-gold-400 text-sm font-bold flex items-center gap-2">Mulai Konsultasi <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                </div>
+
+                <!-- Card 6: Bisnis -->
+                <div class="practice-card bg-navy-800/50 border border-slate-800 rounded-xl p-8 hover:border-gold-500/50 transition-all duration-300 hover:-translate-y-1 shadow-lg" data-category="bisnis">
+                    <div class="text-gold-500 text-4xl mb-6"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h3 class="serif-title text-xl font-bold text-white mb-3">Legal Audit & Kepatuhan Pajak</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Melakukan audit hukum berkala atas operasional bisnis Anda guna memastikan pematuhan menyeluruh terhadap regulasi pemerintah terbaru serta mitigasi risiko perpajakan.</p>
+                    <a href="#konsultasi-portal" onclick="selectPracticeInForm('Legal Audit')" class="text-gold-500 hover:text-gold-400 text-sm font-bold flex items-center gap-2">Mulai Konsultasi <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONSULTASI PORTAL (INTEGRATED INTERACTIVE SYSTEM) -->
+    <section id="konsultasi-portal" class="py-24 bg-gradient-to-b from-navy-900 to-navy-950 relative border-t border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <div class="text-gold-500 font-semibold tracking-wider uppercase text-sm">Portal Layanan Konsultasi</div>
+                <h2 class="serif-title text-3xl sm:text-4xl font-bold text-white">Mulai Pengaduan Kasus Anda</h2>
+                <p class="text-slate-400">Gunakan platform asisten pintar kami untuk menjadwalkan konsultasi serta melakukan evaluasi awal kasus secara aman dan rahasia.</p>
+            </div>
+
+            <!-- Portal Card Wrapper with Multi-step Wizard -->
+            <div class="bg-navy-800 border border-gold-500/20 rounded-2xl shadow-2xl overflow-hidden min-h-[500px] flex flex-col">
+                <!-- Header Progress Bar -->
+                <div class="bg-navy-900 px-6 py-4 border-b border-slate-800 flex justify-between items-center flex-wrap gap-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-gold-500 text-navy-950 flex items-center justify-center font-bold text-sm" id="step-number-indicator">1</div>
+                        <span class="text-sm font-bold text-white" id="step-title-indicator">Klasifikasi Tipe Klien</span>
+                    </div>
+                    <!-- Indicator dots -->
+                    <div class="flex gap-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-gold-500 transition-all duration-300" id="dot-1"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-slate-700 transition-all duration-300" id="dot-2"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-slate-700 transition-all duration-300" id="dot-3"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-slate-700 transition-all duration-300" id="dot-4"></span>
+                    </div>
+                </div>
+
+                <!-- Active Step Workspace -->
+                <div class="p-8 sm:p-12 flex-grow flex flex-col justify-center">
+                    
+                    <!-- Step 1: Client Type Selection -->
+                    <div id="wizard-step-1" class="space-y-6">
+                        <h3 class="serif-title text-2xl font-bold text-white text-center">Bagaimana cara kami mendampingi Anda?</h3>
+                        <p class="text-center text-slate-400 text-sm max-w-md mx-auto">Tentukan apakah penanganan hukum ini ditujukan untuk penyelesaian sengketa individu atau atas nama entitas bisnis Anda.</p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto pt-4">
+                            <!-- Option 1 -->
+                            <div onclick="selectClientType('Individu')" class="group cursor-pointer bg-navy-900 border border-slate-700 hover:border-gold-500/60 p-6 rounded-xl transition-all duration-300 text-center relative select-card" id="card-ind">
+                                <div class="w-16 h-16 mx-auto bg-gold-500/10 group-hover:bg-gold-500/20 text-gold-500 rounded-full flex items-center justify-center text-3xl mb-4 transition-all">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <h4 class="font-bold text-lg text-white mb-2">Saya Klien Individu</h4>
+                                <p class="text-xs text-slate-400">Hukum Keluarga, Waris, Pidana Umum, Sengketa Lahan, Ketenagakerjaan Perseorangan, dll.</p>
+                                <span class="absolute top-4 right-4 text-gold-500 text-xl opacity-0 transition-opacity" id="check-ind"><i class="fa-solid fa-circle-check"></i></span>
+                            </div>
+                            <!-- Option 2 -->
+                            <div onclick="selectClientType('Bisnis')" class="group cursor-pointer bg-navy-900 border border-slate-700 hover:border-gold-500/60 p-6 rounded-xl transition-all duration-300 text-center relative select-card" id="card-bis">
+                                <div class="w-16 h-16 mx-auto bg-gold-500/10 group-hover:bg-gold-500/20 text-gold-500 rounded-full flex items-center justify-center text-3xl mb-4 transition-all">
+                                    <i class="fa-solid fa-building"></i>
+                                </div>
+                                <h4 class="font-bold text-lg text-white mb-2">Saya Klien Bisnis</h4>
+                                <p class="text-xs text-slate-400">Legalitas PT/CV, Kontrak Dagang, HAKI, Akuisisi Usaha, Legal Compliance Audit, Pajak, dll.</p>
+                                <span class="absolute top-4 right-4 text-gold-500 text-xl opacity-0 transition-opacity" id="check-bis"><i class="fa-solid fa-circle-check"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Detail Kasus & Category -->
+                    <div id="wizard-step-2" class="space-y-6 hidden">
+                        <h3 class="serif-title text-2xl font-bold text-white text-center">Spesifikasi Detail Permasalahan</h3>
+                        <p class="text-center text-slate-400 text-sm max-w-md mx-auto">Isi detail klasifikasi area hukum dan tuliskan secara garis besar kasus yang sedang Anda alami.</p>
+                        
+                        <div class="max-w-2xl mx-auto space-y-4 pt-2">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider font-semibold text-slate-400 mb-2">Kategori Hukum Utama</label>
+                                <select id="form-category" class="w-full bg-navy-900 border border-slate-700 rounded-lg p-3 text-slate-300 focus:outline-none focus:border-gold-500">
+                                    <option value="">-- Silakan Pilih Kategori --</option>
+                                    <option value="Hukum Keluarga">Hukum Perdata & Urusan Keluarga</option>
+                                    <option value="Sengketa Properti">Sengketa Tanah & Kepemilikan Rumah</option>
+                                    <option value="Hukum Perusahaan">Legalitas & Manajemen Perusahaan (Corporate)</option>
+                                    <option value="Perpajakan">Kepatuhan Hukum Pajak & Audit Finansial</option>
+                                    <option value="Hukum Pidana">Litigasi Hukum Pidana (Umum / Khusus)</option>
+                                    <option value="HAKI">Perlindungan Kekayaan Intelektual (HAKI)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider font-semibold text-slate-400 mb-2">Uraian Ringkas Masalah (Opsional - Sangat Rahasia)</label>
+                                <textarea id="form-case-desc" rows="4" class="w-full bg-navy-900 border border-slate-700 rounded-lg p-3 text-slate-300 focus:outline-none focus:border-gold-500 text-sm placeholder-slate-600" placeholder="Tuliskan di sini perihal masalah utama atau apa yang ingin Anda konsultasikan dengan konsultan kami..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Schedule Selection -->
+                    <div id="wizard-step-3" class="space-y-6 hidden">
+                        <h3 class="serif-title text-2xl font-bold text-white text-center">Atur Jadwal Pertemuan</h3>
+                        <p class="text-center text-slate-400 text-sm max-w-md mx-auto">Kami menyediakan opsi konsultasi tatap muka online (via Zoom/Meet) untuk kenyamanan fleksibilitas Anda.</p>
+                        
+                        <div class="max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+                            <!-- Date Selector -->
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider font-semibold text-slate-400 mb-2">Pilih Tanggal</label>
+                                <input type="date" id="form-date" class="w-full bg-navy-900 border border-slate-700 rounded-lg p-3 text-slate-300 focus:outline-none focus:border-gold-500">
+                            </div>
+                            <!-- Time Slot Selector -->
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider font-semibold text-slate-400 mb-2">Pilih Sesi Waktu (WIB)</label>
+                                <select id="form-time" class="w-full bg-navy-900 border border-slate-700 rounded-lg p-3 text-slate-300 focus:outline-none focus:border-gold-500">
+                                    <option value="">-- Pilih Sesi --</option>
+                                    <option value="Pagi (09.00 - 11.00)">Pagi (09.00 - 11.00) WIB</option>
+                                    <option value="Siang (13.00 - 15.00)">Siang (13.00 - 15.00) WIB</option>
+                                    <option value="Sore (15.30 - 17.30)">Sore (15.30 - 17.30) WIB</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Contact details -->
+                    <div id="wizard-step-4" class="space-y-6 hidden">
+                        <h3 class="serif-title text-2xl font-bold text-white text-center">Data Kontak Klien</h3>
+                        <p class="text-center text-slate-400 text-sm max-w-md mx-auto">Silakan cantumkan data diri yang sah agar tim sekretariat kami dapat mengirimkan tautan undangan konsultasi resmi.</p>
+                        
+                        <div class="max-w-xl mx-auto space-y-4 pt-2">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs uppercase tracking-wider font-semibold text-slate-400 mb-2">Nama Lengkap</label>
+                                    <input type="text" id="form-name" class="w-full bg-navy-900 border border-slate-700 rounded-lg p-3 text-slate-300 focus:outline-none focus:border-gold-500 text-sm" placeholder="Nama Anda / Nama Perwakilan">
+                                </div>
+                                <div>
+                                    <label class="block text-xs uppercase tracking-wider font-semibold text-slate-400 mb-2">Nomor WhatsApp</label>
+                                    <input type="tel" id="form-phone" class="w-full bg-navy-900 border border-slate-700 rounded-lg p-3 text-slate-300 focus:outline-none focus:border-gold-500 text-sm" placeholder="Contoh: 08123456xxxx">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider font-semibold text-slate-400 mb-2">Alamat Email Aktif</label>
+                                <input type="email" id="form-email" class="w-full bg-navy-900 border border-slate-700 rounded-lg p-3 text-slate-300 focus:outline-none focus:border-gold-500 text-sm" placeholder="email@contoh.com">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Success State (Step 5) -->
+                    <div id="wizard-step-success" class="space-y-6 hidden text-center py-6">
+                        <div class="w-20 h-20 bg-green-500/10 text-green-500 rounded-full flex items-center justify-center text-4xl mx-auto border border-green-500/20 shadow-lg shadow-green-500/5">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <h3 class="serif-title text-3xl font-bold text-white">Konsultasi Terjadwal!</h3>
+                        <p class="text-slate-400 text-sm max-w-md mx-auto">Tiket pengajuan hukum Anda berhasil dibuat secara aman. Tautan sesi pertemuan dikirimkan langsung ke WhatsApp dan Email Anda.</p>
+                        
+                        <!-- Pseudo Ticket Receipt Card -->
+                        <div class="max-w-md mx-auto bg-navy-900 border border-slate-800 rounded-xl p-6 text-left space-y-3 relative overflow-hidden">
+                            <div class="absolute right-0 top-0 w-24 h-24 bg-gold-500/5 transform translate-x-12 -translate-y-12 rotate-45"></div>
+                            <div class="flex justify-between border-b border-slate-800 pb-2.5">
+                                <span class="text-xs text-slate-500">KODE TIKET ADUAN</span>
+                                <span class="text-xs font-bold text-gold-500 font-mono" id="receipt-ticket">NF-89412-2026</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-y-2 text-xs">
+                                <span class="text-slate-400">Klien</span>
+                                <span class="text-white font-semibold text-right" id="receipt-name">-</span>
+                                <span class="text-slate-400">Tipe Kasus</span>
+                                <span class="text-white font-semibold text-right" id="receipt-category">-</span>
+                                <span class="text-slate-400">Jadwal Sesi</span>
+                                <span class="text-white font-semibold text-right" id="receipt-schedule">-</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4">
+                            <button onclick="resetWizard()" class="bg-navy-900 border border-slate-700 hover:border-gold-500 px-6 py-2.5 rounded font-bold text-sm transition-all">
+                                Ajukan Aduan Kasus Baru
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Footer Navigation Buttons inside Wizard -->
+                <div class="bg-navy-900 px-8 py-5 border-t border-slate-800 flex justify-between items-center" id="wizard-navigation">
+                    <button onclick="wizardPrev()" id="btn-wizard-prev" class="invisible border border-slate-700 hover:border-slate-500 hover:text-white px-5 py-2.5 rounded font-bold text-sm transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-chevron-left"></i> Kembali
+                    </button>
+                    <button onclick="wizardNext()" id="btn-wizard-next" class="bg-gold-500 hover:bg-gold-600 text-navy-950 px-6 py-2.5 rounded font-bold text-sm transition-all flex items-center gap-2">
+                        Lanjutkan <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIM ADVOKAT (OUR ATTORNEY TEAM) -->
+    <section id="tim" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <div class="text-gold-500 font-semibold tracking-wider uppercase text-sm">Tim Advokat Nusantara</div>
+                <h2 class="serif-title text-3xl sm:text-4xl font-bold text-white">Pendamping Hukum Senior Anda</h2>
+                <p class="text-slate-400">Diisi oleh para pengacara berlisensi resmi dengan komitmen tinggi serta kepemilikan rekam jejak litigasi & non-litigasi yang solid di Indonesia.</p>
+            </div>
+
+            <!-- Team Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Advokat 1 -->
+                <div class="bg-navy-900 border border-slate-800 rounded-xl overflow-hidden group hover:border-gold-500/50 transition-all shadow-lg text-center p-6">
+                    <!-- Icon representation instead of broken image URLs -->
+                    <div class="w-32 h-32 mx-auto rounded-full bg-slate-800 border-2 border-gold-500/30 flex items-center justify-center text-5xl text-gold-500 mb-6 group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="serif-title text-xl font-bold text-white">Wibowo Suryanegara, S.H., M.H.</h4>
+                        <div class="text-xs text-gold-500 uppercase tracking-widest font-semibold">Managing Partner & Founder</div>
+                        <p class="text-slate-400 text-xs mt-3 leading-relaxed">Pakar hukum pertanahan & properti dengan pengalaman litigasi pidana di pengadilan tinggi selama lebih dari 15 tahun.</p>
+                    </div>
+                </div>
+
+                <!-- Advokat 2 -->
+                <div class="bg-navy-900 border border-slate-800 rounded-xl overflow-hidden group hover:border-gold-500/50 transition-all shadow-lg text-center p-6">
+                    <div class="w-32 h-32 mx-auto rounded-full bg-slate-800 border-2 border-gold-500/30 flex items-center justify-center text-5xl text-gold-500 mb-6 group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-user-ninja"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="serif-title text-xl font-bold text-white">Andini Larasati, S.H., LL.M.</h4>
+                        <div class="text-xs text-gold-500 uppercase tracking-widest font-semibold">Senior Corporate Partner</div>
+                        <p class="text-slate-400 text-xs mt-3 leading-relaxed">Spesialis dalam regulasi korporasi, merger, akuisisi, restrukturisasi perusahaan multinasional, serta hukum HAKI.</p>
+                    </div>
+                </div>
+
+                <!-- Advokat 3 -->
+                <div class="bg-navy-900 border border-slate-800 rounded-xl overflow-hidden group hover:border-gold-500/50 transition-all shadow-lg text-center p-6">
+                    <div class="w-32 h-32 mx-auto rounded-full bg-slate-800 border-2 border-gold-500/30 flex items-center justify-center text-5xl text-gold-500 mb-6 group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="serif-title text-xl font-bold text-white">Bramantyo Guntur, S.H.</h4>
+                        <div class="text-xs text-gold-500 uppercase tracking-widest font-semibold">Senior Associate Advocate</div>
+                        <p class="text-slate-400 text-xs mt-3 leading-relaxed">Ahli dalam penanganan sengketa mediasi, urusan hukum keluarga, gugatan perdata umum, serta kepailitan korporasi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER WITH LEGAL DISCLAIMERS -->
+    <footer class="bg-navy-950 border-t border-slate-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <!-- Branding -->
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-gold-500 rounded flex items-center justify-center text-navy-950">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <span class="text-lg font-bold tracking-wider text-gold-500 serif-title">NUSANTARA</span>
+                </div>
+                <p class="text-xs text-slate-500 leading-relaxed">
+                    Nusantara Firma memberikan dedikasi penyelesaian hukum terbaik dan pendampingan litigasi/non-litigasi terpercaya di Indonesia.
+                </p>
+            </div>
+
+            <!-- Practice Quick Links -->
+            <div class="space-y-3">
+                <h4 class="font-bold text-white text-sm uppercase tracking-wider">Area Hukum</h4>
+                <ul class="text-xs text-slate-400 space-y-2">
+                    <li><a href="#praktik" class="hover:text-gold-500">Hukum Keluarga & Waris</a></li>
+                    <li><a href="#praktik" class="hover:text-gold-500">Sengketa Tanah & Properti</a></li>
+                    <li><a href="#praktik" class="hover:text-gold-500">Hukum Perusahaan</a></li>
+                    <li><a href="#praktik" class="hover:text-gold-500">Hak Kekayaan Intelektual</a></li>
+                </ul>
+            </div>
+
+            <!-- Offices -->
+            <div class="space-y-3">
+                <h4 class="font-bold text-white text-sm uppercase tracking-wider">Kantor Pusat</h4>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Nusantara Law Tower, Lt. 12<br>
+                    Jl. Jend. Sudirman Kav. 21, Jakarta Selatan,<br>
+                    DKI Jakarta 12920
+                </p>
+            </div>
+
+            <!-- Contacts -->
+            <div class="space-y-3">
+                <h4 class="font-bold text-white text-sm uppercase tracking-wider">Hubungi Kami</h4>
+                <ul class="text-xs text-slate-400 space-y-2">
+                    <li><i class="fa-solid fa-phone text-gold-500 mr-2"></i> +62-21-555-8941</li>
+                    <li><i class="fa-brands fa-whatsapp text-gold-500 mr-2"></i> +62-812-3456-7890</li>
+                    <li><i class="fa-solid fa-envelope text-gold-500 mr-2"></i> info@nusantarafirma.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Ethical Disclaimer & Copyright -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-900 pt-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-slate-600">
+            <p class="max-w-xl text-center md:text-left">
+                <strong>Disclaimer Hukum (Sangkalan):</strong> Seluruh materi penulisan, artikel, dan simulasi analisis yang ada di website ini disajikan semata-mata hanya untuk tujuan edukasi informasi umum. Hal tersebut bukanlah merupakan nasihat hukum formal dari pengacara atau advokat profesional dari Nusantara Firma.
+            </p>
+            <p class="text-center md:text-right flex-shrink-0">
+                &copy; 2026 Nusantara Firma. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE VIRTUAL ASSISTANT (CHATBOT WIDGET) -->
+    <!-- Launcher Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button onclick="toggleChatbot()" class="w-14 h-14 bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 rounded-full flex items-center justify-center text-2xl shadow-xl shadow-gold-500/20 hover:scale-105 active:scale-95 transition-all duration-300 relative">
+            <i class="fa-solid fa-comments"></i>
+            <span class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border border-navy-950 animate-pulse"></span>
+        </button>
+    </div>
+
+    <!-- Chatbot Window -->
+    <div id="chatbot-window" class="hidden fixed bottom-24 right-6 w-80 sm:w-96 h-[500px] bg-navy-900 border border-gold-500/20 rounded-2xl shadow-2xl z-50 flex flex-col overflow-hidden">
+        <!-- Chat Header -->
+        <div class="bg-navy-950 px-4 py-4 border-b border-slate-800 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-gold-500/10 text-gold-500 flex items-center justify-center text-sm">
+                    <i class="fa-solid fa-user-shield"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-sm">Nusantara Bot</h4>
+                    <span class="block text-[9px] text-green-400 font-semibold uppercase tracking-wider">Asisten Hukum Online</span>
+                </div>
+            </div>
+            <button onclick="toggleChatbot()" class="text-slate-400 hover:text-white transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+        </div>
+
+        <!-- Chat Workspace Area (Messages) -->
+        <div id="chat-messages" class="flex-grow p-4 overflow-y-auto space-y-3 scroll-smooth text-xs">
+            <!-- Welcome message -->
+            <div class="flex gap-2">
+                <div class="w-6 h-6 rounded-full bg-gold-500/10 text-gold-500 flex items-center justify-center flex-shrink-0 text-[10px]">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <div class="bg-navy-800 p-3 rounded-lg rounded-tl-none max-w-[80%] text-slate-300 leading-relaxed">
+                    Halo! Selamat datang di **Nusantara Firma**. Saya asisten virtual Anda. Ada yang bisa saya bantu hari ini?
+                </div>
+            </div>
+        </div>
+
+        <!-- Predefined Quick Queries (Chips) -->
+        <div class="px-4 py-2 bg-navy-950 border-t border-slate-800 flex gap-2 overflow-x-auto whitespace-nowrap scrollbar-none" id="chat-quick-chips">
+            <button onclick="handleQuickChat('cara_booking')" class="text-[10px] bg-navy-800 border border-slate-700 text-slate-300 hover:border-gold-500/50 px-3 py-1.5 rounded-full font-medium transition-all">Cara Booking Konsultasi?</button>
+            <button onclick="handleQuickChat('hukum_bisnis')" class="text-[10px] bg-navy-800 border border-slate-700 text-slate-300 hover:border-gold-500/50 px-3 py-1.5 rounded-full font-medium transition-all">Hukum Bisnis Nusantara?</button>
+            <button onclick="handleQuickChat('kantor_alamat')" class="text-[10px] bg-navy-800 border border-slate-700 text-slate-300 hover:border-gold-500/50 px-3 py-1.5 rounded-full font-medium transition-all">Lokasi & Kontak?</button>
+        </div>
+
+        <!-- Chat Input Footer -->
+        <div class="p-3 bg-navy-950 border-t border-slate-800 flex gap-2">
+            <input type="text" id="chat-input" class="flex-grow bg-navy-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-300 placeholder-slate-600 text-xs focus:outline-none focus:border-gold-500" placeholder="Ketik pesan hukum Anda..." onkeypress="handleChatEnter(event)">
+            <button onclick="sendMessage()" class="bg-gold-500 hover:bg-gold-600 text-navy-950 w-9 h-9 rounded-lg flex items-center justify-center text-sm transition-all flex-shrink-0">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- UI Custom Toast System -->
+    <div id="toast-notif" class="fixed top-24 right-6 z-50 bg-navy-800 border border-gold-500/30 p-4 rounded-xl shadow-2xl flex items-center gap-3 transform translate-x-80 opacity-0 transition-all duration-300 max-w-sm">
+        <div class="w-8 h-8 rounded-full bg-gold-500/10 text-gold-500 flex items-center justify-center text-sm flex-shrink-0">
+            <i class="fa-solid fa-bell"></i>
+        </div>
+        <div>
+            <h5 class="text-xs font-bold text-white" id="toast-title">Notifikasi</h5>
+            <p class="text-[10px] text-slate-400 mt-0.5" id="toast-msg">Detail pesan disini.</p>
+        </div>
+    </div>
+
+
+    <!-- WEBSITE JAVASCRIPT LOGIC -->
+    <script>
+        // MOBILE MENU TRIGGER
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // PRACTICE AREAS TAB SYSTEM
+        function switchPracticeTab(category) {
+            const tabs = ['semua', 'individu', 'bisnis'];
+            const cards = document.querySelectorAll('.practice-card');
+
+            // Toggle Tab styles
+            tabs.forEach(tab => {
+                const btn = document.getElementById(`tab-${tab}`);
+                if (tab === category) {
+                    btn.className = "px-5 py-2 rounded text-sm font-semibold transition-all duration-300 bg-gold-500 text-navy-950 shadow-md";
+                } else {
+                    btn.className = "px-5 py-2 rounded text-sm font-semibold transition-all duration-300 text-slate-400 hover:text-white";
+                }
+            });
+
+            // Toggle Card visibility
+            cards.forEach(card => {
+                if (category === 'semua' || card.getAttribute('data-category') === category) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // QUICK MINI-FORM REDIRECTS TO PORTAL
+        let quickSelectionType = 'Individu';
+
+        function selectQuickType(type) {
+            quickSelectionType = type;
+            const btnInd = document.getElementById('btn-quick-ind');
+            const btnBis = document.getElementById('btn-quick-bis');
+
+            if (type === 'Individu') {
+                btnInd.className = "py-3 px-4 rounded-lg border border-gold-500 bg-gold-500/10 text-center text-gold-500 transition-all font-semibold block text-sm";
+                btnBis.className = "py-3 px-4 rounded-lg border border-slate-700 bg-navy-900 text-center hover:border-gold-500 transition-all text-slate-300 font-semibold block text-sm";
+            } else {
+                btnBis.className = "py-3 px-4 rounded-lg border border-gold-500 bg-gold-500/10 text-center text-gold-500 transition-all font-semibold block text-sm";
+                btnInd.className = "py-3 px-4 rounded-lg border border-slate-700 bg-navy-900 text-center hover:border-gold-500 transition-all text-slate-300 font-semibold block text-sm";
+            }
+        }
+
+        function selectPracticeInForm(categoryName) {
+            document.getElementById('form-category').value = categoryName;
+            showToast('Kategori Dipilih', `Berhasil memilih kategori ${categoryName} di portal konsultasi.`);
+        }
+
+        function goToConsultation() {
+            // Apply selected types/categories
+            selectClientType(quickSelectionType);
+            
+            const quickCat = document.getElementById('quick-category').value;
+            if (quickCat) {
+                // Map short values to full descriptions
+                const mapping = {
+                    'perdata': 'Hukum Keluarga',
+                    'bisnis': 'Hukum Perusahaan',
+                    'pidana': 'Hukum Pidana',
+                    'sengketa': 'Sengketa Properti'
+                };
+                document.getElementById('form-category').value = mapping[quickCat] || "";
+            }
+
+            // Scroll down
+            document.getElementById('konsultasi-portal').scrollIntoView({ behavior: 'smooth' });
+        }
+
+
+        // MULTI-STEP CONSULTATION WIZARD LOGIC
+        let wizardCurrentStep = 1;
+        let selectedClientTypeVal = "";
+
+        function selectClientType(type) {
+            selectedClientTypeVal = type;
+            const cardInd = document.getElementById('card-ind');
+            const cardBis = document.getElementById('card-bis');
+            const checkInd = document.getElementById('check-ind');
+            const checkBis = document.getElementById('check-bis');
+
+            if (type === 'Individu') {
+                cardInd.className = "group cursor-pointer bg-gold-500/5 border border-gold-500 p-6 rounded-xl transition-all duration-300 text-center relative select-card";
+                cardBis.className = "group cursor-pointer bg-navy-900 border border-slate-700 hover:border-gold-500/60 p-6 rounded-xl transition-all duration-300 text-center relative select-card";
+                checkInd.classList.remove('opacity-0');
+                checkBis.classList.add('opacity-0');
+            } else {
+                cardBis.className = "group cursor-pointer bg-gold-500/5 border border-gold-500 p-6 rounded-xl transition-all duration-300 text-center relative select-card";
+                cardInd.className = "group cursor-pointer bg-navy-900 border border-slate-700 hover:border-gold-500/60 p-6 rounded-xl transition-all duration-300 text-center relative select-card";
+                checkBis.classList.remove('opacity-0');
+                checkInd.classList.add('opacity-0');
+            }
+
+            // Quick auto-next on click for step 1
+            setTimeout(() => {
+                wizardNext();
+            }, 300);
+        }
+
+        function updateWizardUI() {
+            // Manage Step Containers
+            for (let i = 1; i <= 4; i++) {
+                const el = document.getElementById(`wizard-step-${i}`);
+                if (i === wizardCurrentStep) {
+                    el.classList.remove('hidden');
+                } else {
+                    el.classList.add('hidden');
+                }
+                
+                // Dots UI
+                const dot = document.getElementById(`dot-${i}`);
+                if (i <= wizardCurrentStep) {
+                    dot.className = "w-2.5 h-2.5 rounded-full bg-gold-500 transition-all duration-300";
+                } else {
+                    dot.className = "w-2.5 h-2.5 rounded-full bg-slate-700 transition-all duration-300";
+                }
+            }
+
+            // Headers indicators
+            const numInd = document.getElementById('step-number-indicator');
+            const titleInd = document.getElementById('step-title-indicator');
+
+            numInd.innerText = wizardCurrentStep;
+            const titles = ["Klasifikasi Tipe Klien", "Spesifikasi Detail Permasalahan", "Atur Jadwal Pertemuan", "Data Kontak Klien"];
+            titleInd.innerText = titles[wizardCurrentStep - 1];
+
+            // Nav buttons
+            const prevBtn = document.getElementById('btn-wizard-prev');
+            const nextBtn = document.getElementById('btn-wizard-next');
+
+            if (wizardCurrentStep === 1) {
+                prevBtn.classList.add('invisible');
+            } else {
+                prevBtn.classList.remove('invisible');
+            }
+
+            if (wizardCurrentStep === 4) {
+                nextBtn.innerHTML = `Selesaikan Booking <i class="fa-solid fa-check"></i>`;
+                nextBtn.className = "bg-green-500 hover:bg-green-600 text-white px-6 py-2.5 rounded font-bold text-sm transition-all flex items-center gap-2";
+            } else {
+                nextBtn.innerHTML = `Lanjutkan <i class="fa-solid fa-chevron-right"></i>`;
+                nextBtn.className = "bg-gold-500 hover:bg-gold-600 text-navy-950 px-6 py-2.5 rounded font-bold text-sm transition-all flex items-center gap-2";
+            }
+        }
+
+        function wizardNext() {
+            // Validation per Step
+            if (wizardCurrentStep === 1 && !selectedClientTypeVal) {
+                showToast("Pemberitahuan", "Harap pilih tipe klien terlebih dahulu.");
+                return;
+            }
+            if (wizardCurrentStep === 2) {
+                const cat = document.getElementById('form-category').value;
+                if (!cat) {
+                    showToast("Pemberitahuan", "Silakan pilih salah satu kategori hukum.");
+                    return;
+                }
+            }
+            if (wizardCurrentStep === 3) {
+                const date = document.getElementById('form-date').value;
+                const time = document.getElementById('form-time').value;
+                if (!date || !time) {
+                    showToast("Pemberitahuan", "Silakan atur tanggal & sesi waktu konsultasi.");
+                    return;
+                }
+            }
+
+            if (wizardCurrentStep < 4) {
+                wizardCurrentStep++;
+                updateWizardUI();
+            } else {
+                // On step 4: Final submission trigger
+                submitConsultation();
+            }
+        }
+
+        function wizardPrev() {
+            if (wizardCurrentStep > 1) {
+                wizardCurrentStep--;
+                updateWizardUI();
+            }
+        }
+
+        function submitConsultation() {
+            // Retrieve values
+            const name = document.getElementById('form-name').value;
+            const phone = document.getElementById('form-phone').value;
+            const email = document.getElementById('form-email').value;
+            const category = document.getElementById('form-category').value;
+            const date = document.getElementById('form-date').value;
+            const time = document.getElementById('form-time').value;
+
+            if (!name || !phone || !email) {
+                showToast("Pemberitahuan", "Harap melengkapi seluruh kolom data kontak.");
+                return;
+            }
+
+            // Mock submission delay
+            const nextBtn = document.getElementById('btn-wizard-next');
+            nextBtn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> Menyimpan...`;
+            nextBtn.disabled = true;
+
+            setTimeout(() => {
+                // Populate receipt pseudo ticket
+                document.getElementById('receipt-name').innerText = name;
+                document.getElementById('receipt-category').innerText = `${selectedClientTypeVal} - ${category}`;
+                document.getElementById('receipt-schedule').innerText = `${date} (${time})`;
+                
+                // Random ticket code
+                const randomNo = Math.floor(10000 + Math.random() * 90000);
+                document.getElementById('receipt-ticket').innerText = `NF-${randomNo}-2026`;
+
+                // Hide workspace step & navigation, show success screen
+                document.getElementById(`wizard-step-4`).classList.add('hidden');
+                document.getElementById('wizard-navigation').classList.add('hidden');
+                document.getElementById('wizard-step-success').classList.remove('hidden');
+
+                showToast("Selesai!", "Sesi konsultasi Anda berhasil kami amankan.");
+            }, 1500);
+        }
+
+        function resetWizard() {
+            wizardCurrentStep = 1;
+            selectedClientTypeVal = "";
+            
+            // Reset input values
+            document.getElementById('form-name').value = "";
+            document.getElementById('form-phone').value = "";
+            document.getElementById('form-email').value = "";
+            document.getElementById('form-case-desc').value = "";
+            document.getElementById('form-category').value = "";
+            document.getElementById('form-date').value = "";
+            document.getElementById('form-time').value = "";
+
+            // Reset cards styling
+            document.getElementById('card-ind').className = "group cursor-pointer bg-navy-900 border border-slate-700 hover:border-gold-500/60 p-6 rounded-xl transition-all duration-300 text-center relative select-card";
+            document.getElementById('card-bis').className = "group cursor-pointer bg-navy-900 border border-slate-700 hover:border-gold-500/60 p-6 rounded-xl transition-all duration-300 text-center relative select-card";
+            document.getElementById('check-ind').classList.add('opacity-0');
+            document.getElementById('check-bis').classList.add('opacity-0');
+
+            // Toggle screens
+            document.getElementById('wizard-step-success').classList.add('hidden');
+            document.getElementById('wizard-navigation').classList.remove('hidden');
+            
+            const nextBtn = document.getElementById('btn-wizard-next');
+            nextBtn.disabled = false;
+
+            updateWizardUI();
+        }
+
+
+        // TOAST NOTIFICATION UTILITY
+        function showToast(title, message) {
+            const toast = document.getElementById('toast-notif');
+            document.getElementById('toast-title').innerText = title;
+            document.getElementById('toast-msg').innerText = message;
+
+            toast.classList.remove('translate-x-80', 'opacity-0');
+            toast.classList.add('translate-x-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-x-0', 'opacity-100');
+                toast.classList.add('translate-x-80', 'opacity-0');
+            }, 4000);
+        }
+
+
+        // CHATBOT WIDGET INTERACTION
+        function toggleChatbot() {
+            const el = document.getElementById('chatbot-window');
+            el.classList.toggle('hidden');
+        }
+
+        function handleChatEnter(event) {
+            if (event.key === "Enter") {
+                sendMessage();
+            }
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('chat-input');
+            const val = input.value.trim();
+            if (!val) return;
+
+            // Render Client message
+            renderChatMessage(val, 'client');
+            input.value = "";
+
+            // Simple Auto-response router based on keywords
+            setTimeout(() => {
+                const textLower = val.toLowerCase();
+                let reply = "Mohon maaf, saya belum memahami pesan Anda secara lengkap. Untuk asisten spesifik kasus, silakan gunakan menu **Portal Konsultasi Online** di tengah halaman utama kami.";
+
+                if (textLower.includes('harga') || textLower.includes('biaya') || textLower.includes('tarif')) {
+                    reply = "Tarif konsultasi dasar bervariasi bergantung pada jenis kasus (Individu vs Bisnis). Tim sekretariat kami akan melampirkan rincian lengkap beserta estimasi biaya hukum setelah Anda mendaftarkan sesi di **Portal Konsultasi** kami.";
+                } else if (textLower.includes('lokasi') || textLower.includes('alamat') || textLower.includes('kantor') || textLower.includes('jakarta')) {
+                    reply = "Kantor pusat **Nusantara Firma** terletak di Nusantara Law Tower, Lt. 12, Jl. Jend. Sudirman Kav. 21, Jakarta Selatan. Kami melayani kunjungan luring secara terjadwal.";
+                } else if (textLower.includes('booking') || textLower.includes('cara') || textLower.includes('konsultasi')) {
+                    reply = "Sangat praktis! Anda hanya perlu menggulir ke bagian **Portal Layanan Konsultasi** pada halaman utama ini, tentukan opsi jenis kasus, atur tanggal yang cocok, dan masukkan kontak Anda.";
+                } else if (textLower.includes('bisnis') || textLower.includes('pt') || textLower.includes('perusahaan')) {
+                    reply = "Kami menyediakan penanganan hukum khusus entitas korporat mencakup pembuatan draf kontrak legalitas PT/CV, HAKI merek, hingga kepatuhan hukum sengketa pasar modal.";
+                }
+
+                renderChatMessage(reply, 'bot');
+            }, 800);
+        }
+
+        function handleQuickChat(type) {
+            let userText = "";
+            let replyText = "";
+
+            if (type === 'cara_booking') {
+                userText = "Bagaimana cara melakukan booking jadwal hukum?";
+                replyText = "Anda dapat memesan jadwal secara real-time langsung melalui asisten **Portal Konsultasi Online** kami yang tertera di halaman utama. Layanan terenkripsi penuh untuk menjaga data rahasia Anda.";
+            } else if (type === 'hukum_bisnis') {
+                userText = "Apa saja pelayanan hukum untuk bisnis?";
+                replyText = "Kami melayani legalitas pendirian PT/CV, audit kepatuhan korporasi, legal opini kontrak bisnis dagang, pendaftaran HAKI (Merek/Paten), dan pendampingan sengketa sengketa komersial.";
+            } else if (type === 'kantor_alamat') {
+                userText = "Di mana alamat kantor & bagaimana kontak aslinya?";
+                replyText = "Kami berbasis di Sudirman, Jakarta Selatan (Nusantara Law Tower Lt. 12). Anda dapat berinteraksi langsung melalui telepon (+62-21-555-8941) atau chat WhatsApp resmi kami di (+62-812-3456-7890).";
+            }
+
+            renderChatMessage(userText, 'client');
+            
+            setTimeout(() => {
+                renderChatMessage(replyText, 'bot');
+            }, 500);
+        }
+
+        function renderChatMessage(text, sender) {
+            const container = document.getElementById('chat-messages');
+            const wrap = document.createElement('div');
+            wrap.className = "flex gap-2 " + (sender === 'client' ? "justify-end" : "");
+
+            const botAvatar = `
+                <div class="w-6 h-6 rounded-full bg-gold-500/10 text-gold-500 flex items-center justify-center flex-shrink-0 text-[10px]">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+            `;
+
+            const messageBox = `
+                <div class="${sender === 'client' ? "bg-gold-500 text-navy-950 rounded-tr-none" : "bg-navy-800 text-slate-300 rounded-tl-none"} p-3 rounded-lg max-w-[80%] leading-relaxed">
+                    ${text}
+                </div>
+            `;
+
+            wrap.innerHTML = sender === 'client' ? messageBox : (botAvatar + messageBox);
+            container.appendChild(wrap);
+            
+           // Auto scroll down
+            container.scrollTop = container.scrollHeight;
+        }
+
+        // Initialize state on load
+        window.onload = function() {
+            // Pre-select first radio
+            selectQuickType('Individu');
+            updateWizardUI();
+        }
+    </script>
+</body>
+</html>
+
+```
+ b
